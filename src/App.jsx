@@ -153,7 +153,7 @@ export default function App() {
       <section className="visualization">
         <div className="eyebrow">STUDENT DISTRIBUTION</div>
 
-        <h1>Where students in our d3 + React course come from</h1>
+        <h1>Where students in our D3 + React course come from</h1>
 
         <p className="subtitle">Number of students by country of origin</p>
 
