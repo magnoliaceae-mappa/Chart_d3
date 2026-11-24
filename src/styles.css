@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #252b30;
+  background: #f7f7f4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 65px 30px;
+}
+
+.visualization {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 45px 50px;
+  background: #ffffff;
+  border: 1px solid #eaeae5;
+}
+
+.eyebrow {
+  color: #a16c4a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 17px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(30px, 4vw, 43px);
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin: 0;
+  color: #252b30;
+}
+
+.subtitle {
+  margin: 12px 0 42px;
+  color: #777e80;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.chart-container {
+  width: 100%;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  color: #929797;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid #eeeeeb;
+  padding-bottom: 13px;
+}
+
+.chart-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.bar-chart {
+  display: block;
+  width: 100%;
+  min-width: 650px;
+  height: auto;
+  overflow: visible;
+}
+
+.gridline {
+  stroke: #e9eae7;
+  stroke-width: 1;
+  stroke-dasharray: 3 4;
+}
+
+.axis-tick {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  fill: #999f9f;
+}
+
+.country-label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  fill: #52595a;
+}
+
+.bar {
+  fill: #a7b5b0;
+  transition: fill 180ms ease;
+}
+
+.bar-highlight {
+  fill: #b47751;
+}
+
+.bar-group:hover .bar {
+  fill: #687e78;
+}
+
+.bar-group:hover .bar-highlight {
+  fill: #925b38;
+}
+
+.value-label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  fill: #424b4b;
+}
+
+.axis-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  fill: #858c8c;
+}
+
+.chart-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-top: 1px solid #eeeeeb;
+  margin-top: 30px;
+  padding-top: 25px;
+}
+
+.chart-footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #999f9f;
+}
+
+.chart-footer strong {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333c3b;
+}
+
+.source {
+  font-size: 11px;
+  color: #a0a4a2;
+  margin-top: 30px;
+}
+
+@media (max-width: 650px) {
+  .page {
+    padding: 20px 10px;
+  }
+
+  .visualization {
+    padding: 30px 18px;
+  }
+
+  .subtitle {
+    margin-bottom: 30px;
+  }
+
+  .chart-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
